@@ -1,0 +1,836 @@
+# 
+#  Farmer  1
+#  Fisherman 2
+#  Shepherd  3
+#  Fletcher  4
+
+debug: false
+log:
+  recipes:
+    enable: false
+data:
+  backup:
+    frequency:
+      sec: -1
+locale: en
+yearmarked-show-join-message: true
+yearmarked-show-holograms-on-day-change: true
+yearmarked-worlds:
+- world
+migration-yearmarked-earthday: Earthday
+migration-yearmarked-wortag: Wortag
+migration-yearmarked-fishfryday: Fishfryday
+migration-yearmarked-diamonday: Diamonday
+migration-thordfish: Thordfish
+migration-fish-arrow: Fishbone Arrow
+migration-fish-sword: Needle
+migration-fish-sword-output: STONE_SWORD
+migration-diamond-fish-sword: Needle
+migration-diamond-fish-sword-output: DIAMOND_SWORD
+migration-lightning-inhibitor: Lightning Inhibitor
+migration-earthday-pot-pie: Earthday Pot Pie
+yearmarked-monsoonday-rain: true
+yearmarked-monsoonday-allow-rain-toggle-with-thordfish: true
+yearmarked-monsoonday-rain-toggle-on-with-thordfish-cost: 0
+yearmarked-monsoonday-rain-toggle-off-with-thordfish-cost: 0
+yearmarked-earthday-bonus-crops: true
+yearmarked-earthday-bonus-crops-range-high: 3
+yearmarked-earthday-bonus-crops-range-low: 1
+yearmarked-earthday-pot-pie-buff-duration-sec: 20
+yearmarked-earthday-pot-pie-buff-magnitude: 5
+yearmarked-earthday-pot-pie-affect-entity-arrows-duration-sec: 60
+yearmarked-earthday-allow-entity-arrows: true
+yearmarked-earthday-entity-arrows-costs:
+- COW=1
+- HORSE=1
+- DONKEY=2
+- LLAMA=15
+- PIG=1
+- SHEEP=1
+- CHICKEN=1
+- RABBIT=1
+- WOLF=10
+- SQUID=1
+- MULE=5
+- BAT=5
+- SPIDER=5
+- ZOMBIE=5
+- ZOMBIE_HORSE=5
+- ZOMBIE_VILLAGER=5
+- PIG_ZOMBIE=5
+- MUSHROOM_COW=5
+- SKELETON=10
+- SLIME=10
+- CREEPER=10
+- POLAR_BEAR=15
+- SKELETON_HORSE=15
+- CAVE_SPIDER=15
+- OCELOT=15
+- WITCH=15
+- SNOWMAN=15
+- SILVERFISH=20
+- IRON_GOLEM=40
+- VILLIAGER=60
+yearmarked-wortag-bonus-crops: true
+yearmarked-wortag-bonus-crops-range-high: 3
+yearmarked-wortag-bonus-crops-range-low: 1
+yearmarked-wortag-teleportal-cration-cost: 2
+yearmarked-donnerstag-lightning: true
+yearmarked-donnerstag-allow-lightning-toggle-with-thordfish: true
+yearmarked-donnerstag-lightning-toggle-on-with-thordfish-cost: 0
+yearmarked-donnerstag-lightning-toggle-off-with-thordfish-cost: 1
+yearmarked-donnerstag-allow-super-creeper-spawn-with-fish-sword: true
+yearmarked-donnerstag-super-creeper-spawn-with-fish-sword-percent-chance: 100
+yearmarked-donnerstag-super-creeper-drops-diamond-percent-chance: 5
+yearmarked-donnerstag-super-creeper-drops-emerald-percent-chance: 10
+yearmarked-donnerstag-super-creeper-drops-thordfish-percent-chance: 15
+yearmarked-donnerstag-super-creeper-op-luck: true
+yearmarked-donnerstag-lightning-inhibitor-range: 25
+yearmarked-donnerstag-lightning-inhibitor-personal-range: 5
+yearmarked-donnerstag-no-lightning-zones:
+- (-10,10)(10,-10)
+yearmarked-donnerstag-no-fire-lightning: true
+yearmarked-donnerstag-no-fire-lightning-damage-hearts: 3
+yearmarked-donnerstag-strike-highest-blocks: true
+yearmarked-fishfryday-bonus-xp-multiplier: 2
+yearmarked-fishfryday-percent-chance-diamond: 1
+yearmarked-fishfryday-percent-chance-emerald: 10
+yearmarked-fishfryday-percent-chance-grass: 15
+yearmarked-fishfryday-percent-chance-thordfish: 10
+yearmarked-fishfryday-op-luck: true
+yearmarked-diamonday-bonus-diamonds: true
+yearmarked-diamonday-bonus-diamonds-range-high: 3
+yearmarked-diamonday-bonus-diamonds-range-low: 1
+yearmarked-feathersday-prevent-fall-damage: true
+yearmarked-feathersday-bounce: true
+yearmarked-feathersday-bounce-xz-multiplier: 2.5
+recipes-settings:
+  continuous-translation: true
+recipes-worlds:
+- world
+recipes:
+- thord-fish
+- fish-sword
+- diamonday-sword
+- fish-arrow
+- earth-day-pot-pie
+- lightning-inhibitor
+- diamonday-diamond
+- earthday-wheat
+- earthday-carrot
+- earthday-potato
+- wortag-netherwort
+- fishfryday-diamond
+- fishfryday-emerald
+- fishfryday-grass
+- llama-spit-bucket
+- llama-spit-wand
+recipe:
+  thord-fish:
+    name: Thordfish
+    de:
+      name: Thorfisch
+    locales:
+    - de
+    rows:
+    - FAF
+    - AAA
+    - FAF
+    mats:
+    - F=RAW_FISH
+    - A=AIR
+    output: RAW_FISH
+    op:
+      only: false
+  fish-sword:
+    name: Needle
+    de:
+      name: Nadel
+    locales:
+    - de
+    rows:
+    - AFA
+    - AFA
+    - ASA
+    mats:
+    - F=RAW_FISH
+    - A=AIR
+    - S=STICK
+    output: STONE_SWORD
+    item-has-nbt-key:
+    - 4=thord-fish
+  earthday-wheat:
+    name: Earthday Wheat
+    de:
+      name: Erdtag Weizen
+    locales:
+    - de
+    rows:
+    - AAA
+    - ASA
+    - AWA
+    mats:
+    - S=STONE_SWORD
+    - W=WHEAT
+    output: WHEAT
+    op:
+      only: true
+    keep:
+    - NNN
+    - NYN
+    - NNN
+  earthday-carrot:
+    name: Earthday Carrot
+    de:
+      name: Erdtag Carroten
+    locales:
+    - de
+    rows:
+    - AAA
+    - ASA
+    - ACA
+    mats:
+    - S=STONE_SWORD
+    - C=CARROT_ITEM
+    output: CARROT_ITEM
+    op:
+      only: true
+    keep:
+    - NNN
+    - NYN
+    - NNN
+  earthday-potato:
+    name: Earthday Potato
+    de:
+      name: Erdtag Kartoffel
+    locales:
+    - de
+    rows:
+    - AAA
+    - ASA
+    - APA
+    mats:
+    - S=STONE_SWORD
+    - P=POTATO_ITEM
+    output: POTATO_ITEM
+    op:
+      only: true
+    keep:
+    - NNN
+    - NYN
+    - NNN
+  wortag-netherwort:
+    name: Wortag Netherwort
+    de:
+      name: Wortag Netherwort
+    locales:
+    - de
+    rows:
+    - AAA
+    - ASA
+    - ANA
+    mats:
+    - S=STONE_SWORD
+    - N=NETHER_STALK
+    output: NETHER_STALK
+    op:
+      only: true
+    keep:
+    - NNN
+    - NYN
+    - NNN
+    item-has-nbt-key:
+    - 4=fish-sword
+  diamonday-diamond:
+    name: Diamonday Diamond
+    de:
+      name: Diamantag Diamant
+    locales:
+    - de
+    rows:
+    - AAA
+    - ASA
+    - ADA
+    mats:
+    - S=STONE_SWORD
+    - D=DIAMOND
+    output: DIAMOND
+    op:
+      only: true
+    keep:
+    - NNN
+    - NYN
+    - NNN
+    item-has-nbt-key:
+    - 4=fish-sword
+  diamonday-sword:
+    name: Diamond Needle
+    de:
+      name: Diamontnadel
+    locales:
+    - de
+    rows:
+    - ADA
+    - ADA
+    - ANA
+    mats:
+    - D=DIAMOND
+    - N=STONE_SWORD
+    - A=AIR
+    output: DIAMOND_SWORD
+    item-has-nbt-key:
+    - 1=diamonday-diamond
+    - 4=diamonday-diamond
+    - 7=fish-sword
+  fish-arrow:
+    name: Fishbone Arrow
+    de:
+      name: Grätenpfeil
+    locales:
+    - de
+    rows:
+    - AAA
+    - AFA
+    - ASA
+    mats:
+    - F=RAW_FISH
+    - A=AIR
+    - S=STICK
+    output: ARROW
+    amount: 16
+    item-has-nbt-key:
+    - 4=thord-fish
+  fishfryday-diamond:
+    name: Fishfryday Diamond
+    de:
+      name: Fischfreitag Diamant
+    locales:
+    - de
+    rows:
+    - AAA
+    - AFA
+    - ADA
+    mats:
+    - F=RAW_FISH
+    - D=DIAMOND
+    output: DIAMOND
+    op:
+      only: true
+    keep:
+    - NNN
+    - NYN
+    - NNN
+    item-has-nbt-key:
+    - 4=thord-fish
+  fishfryday-emerald:
+    name: Fishfryday Emerald
+    de:
+      name: Fischfreitag Smaragd
+    locales:
+    - de
+    rows:
+    - AAA
+    - AFA
+    - AEA
+    mats:
+    - F=RAW_FISH
+    - E=EMERALD
+    output: EMERALD
+    op:
+      only: true
+    keep:
+    - NNN
+    - NYN
+    - NNN
+    item-has-nbt-key:
+    - 4=thord-fish
+  fishfryday-grass:
+    name: Fishfryday Grass
+    de:
+      name: Fischfreitag Rasen
+    locales:
+    - de
+    rows:
+    - AAA
+    - AFA
+    - AGA
+    mats:
+    - F=RAW_FISH
+    - G=GRASS
+    output: GRASS
+    op:
+      only: true
+    keep:
+    - NNN
+    - NYN
+    - NNN
+    item-has-nbt-key:
+    - 4=thord-fish
+  earth-day-pot-pie:
+    name: Earthday Pot Pie
+    de:
+      name: Erdtag Topf Torte
+    locales:
+    - de
+    rows:
+    - CCC
+    - PPP
+    - WWW
+    mats:
+    - C=CARROT_ITEM
+    - P=POTATO_ITEM
+    - W=WHEAT
+    output: PUMPKIN_PIE
+    amount: 1
+    item-has-nbt-key:
+    - 0=earthday-carrot
+    - 1=earthday-carrot
+    - 2=earthday-carrot
+    - 3=earthday-potato
+    - 4=earthday-potato
+    - 5=earthday-potato
+    - 6=earthday-wheat
+    - 7=earthday-wheat
+    - 8=earthday-wheat
+  lightning-inhibitor:
+    name: Lightning Inhibitor
+    de:
+      name: Blitz Hemmer
+    locales:
+    - de
+    rows:
+    - DDD
+    - ASA
+    - DDD
+    mats:
+    - D=DIAMOND
+    - A=AIR
+    - S=STONE_SWORD
+    output: FISHING_ROD
+    amount: 1
+    item-has-nbt-key:
+    - 4=fish-sword
+    keep:
+    - NNN
+    - NYN
+    - NNN
+  llama-spit-bucket:
+    name: Llama Spit Bucket
+    de:
+      name: Lama-Spieß-Eimer
+      lore:
+      - Tucke ein Stick in mir ein
+    locales:
+    - de
+    rows:
+    - AAA
+    - ASA
+    - AMA
+    mats:
+    - M=MILK_BUCKET
+    - A=AIR
+    - S=STONE_SWORD
+    output: MILK_BUCKET
+    op:
+      only: true
+    amount: 1
+    item-has-nbt-key:
+    - 4=fish-sword
+    keep:
+    - NNN
+    - NYN
+    - NNN
+    lore:
+    - Dip a stick in me
+  llama-spit-wand:
+    name: Llama Spit Wand
+    de:
+      name: Llama Spießstab
+      lore:
+      - Fallen lassen, um Spucken zu werfen
+    locales:
+    - de
+    rows:
+    - AAA
+    - ASA
+    - ABA
+    mats:
+    - B=MILK_BUCKET
+    - A=AIR
+    - S=STICK
+    output: STICK
+    amount: 1
+    item-has-nbt-key:
+    - 7=llama-spit-bucket
+    lore:
+    - Drop to fling spit
+    yearmarked:
+      cool-down-sec: 0.5
+      rounds: 200
+yearmarked:
+  entity-locales:
+  - en
+  - de
+yearmarked-entities:
+  COW:
+    en: Cow
+    de: Kuh
+  HORSE:
+    en: Horse
+    de: Pferde
+  DONKEY:
+    en: Donkey
+    de: Esel
+  LLAMA:
+    en: Llama
+    de: Lama
+  SHEEP:
+    en: Sheep
+  CHICKEN:
+    en: Chicken
+    de: Huhn
+  RABBIT:
+    en: Rabbit
+    de: Hase
+  WOLF:
+    en: Wolf
+    de: Wolf
+yearmarked-:
+  entities:
+    SHEEP:
+      de: Schaf
+messages:
+  yearmarked-monsoonday:
+    en: Monsoonday
+    de: Regentag
+  yearmarked-earthday:
+    en: Earthday
+    de: Erdtag
+  yearmarked-wortag:
+    en: Wortag
+    de: Wortag
+  yearmarked-donnerstag:
+    en: Donnerstag
+    de: Donnerstag
+  yearmarked-fishfryday:
+    en: Fishfryday
+    de: Fischfreitag
+  yearmarked-diamonday:
+    en: Diamonday
+    de: Diamantag
+  yearmarked-feathersday:
+    en: Feathersday
+    de: Federtag
+  yearmarked-world:
+    en: World
+    de: Welt
+  yearmarked-worlds:
+    en: Worlds
+    de: Welten
+  yearmarked-bonus:
+    en: bonus
+    de: Bonus
+  yearmarked-fall-damage-prevented:
+    en: Fall damage prevented.
+    de: Fallschaden verhindert.
+  yearmarked-double-xp:
+    en: Double XP!
+    de: Doppelte XP!
+  yearmarked-fish-had-diamond:
+    en: The fish had a diamond caught in its mouth!
+    de: Der Fisch hatte einen Diamanten verschluckt!
+  yearmarked-fish-had-emerald:
+    en: The fish had an emerald caught in its mouth!
+    de: Der Fisch hatte einen Smaragd verschluckt!
+  yearmarked-today-is:
+    en: Today is %s
+    de: Heute ist %s!
+  yearmarked-it-is-day-number:
+    en: It is day {0} of month {1} of year {2}.
+    de: Es ist Tag {0}, des Monats {1}, des Jahres {2}.
+  yearmarked-super-creeper-had-diamond:
+    en: That super creeper dropped a diamond!
+    de: Der Super Creeper hat einen Diamnten fallen lassen!
+  yearmarked-super-creeper-had-emerald:
+    en: That super creeper dropped an emerald!
+    de: Der Super Creeper hat einen Smaragd fallen lassen!
+  yearmarked-super-creeper-had-thordfish:
+    en: That super creeper dropped a %s!
+    de: Der SuperCreeper hat einen %s fallen lassen!
+  yearmarked-cant-afford:
+    en: You need {0} {1} in the stack to complete this action.
+    de: Du musst {0} {1} im Stapel haben, um diese Aktion abzuschließen.
+  yearmarked-word-not-enabled:
+    en: world ({0}) not enabled
+    de: Welt ({0}) nicht aktiviert.
+  yearmarked-only-for-op:
+    en: Only for OP users
+    de: Nur für Operatoren.
+  yearmarked-no-permission:
+    en: You do not have permission to do this action.  Ask your admin for the following permissions [{0}]
+    de: Du hast keine Berechtigung um diese Aktion auszuführen.  Frage deinen Admin nach dieser Berechtigung [{0}]
+  yearmarked-ym-command-not-a-valid-number:
+    en: §4{0} was not recognized as a valid number
+    de: §4{0} ist keine gültige Zahl.
+  yearmarked-monsoonday-description:
+    en: It will rain all day today unless you smack a {0} against something.
+    de: Es regnet heute den ganzen Tag, es sei denn, du schlägst einen {0} gegen etwas.
+  yearmarked-earthday-description:
+    en: Harvesting crops today can be beneficial.
+    de: Das Ernten von Getreide kann heute vorteilhaft sein.
+  yearmarked-wortag-description:
+    en: Havesting netherwort today can be beneficial.
+    de: Das Ernten von Netherwarzen kann heute vorteilhaft sein.
+  yearmarked-donnerstag-description:
+    en: It will lightning all day today.  Bust out your {0} to battle super creepers.
+    de: Es blitzt heute den ganzen Tag. Hole dein {0} heraus und kämpfe gegen Super Creeper.
+  yearmarked-fishfrytag-description:
+    en: Catch {0} today.  Craft a {1} sword with {0}.
+    de: Fange heute {0}. Stelle mit Hilfe von {0} ein {1} her.
+  yearmarked-diamonday-description:
+    en: Mining diamond today can be beneficial.
+    de: Der Abbau von Diamanten kann heute vorteilhaft sein.
+  yearmarked-feathersday-description:
+    en: No fall damage today!  Jump off  a cliff with {0}!
+    de: Kein Fallschaden heute! Springe mit {0} von einer Klippe!
+  yearmarked-market-day:
+    de: Markttag
+  yearmarked-not-market-day:
+    de: Markttag ist am ersten Erdtag des Monats.
+  yearmarked-sold-out:
+    de: Ausverkauft
+market-day:
+  restricted-random-materials:
+  - ENDER_CHEST
+  - END_CRYSTAL
+  - END_GATEWAY
+  - ENDER_PORTAL_FRAME
+  - ENDER_PORTAL
+  - BEDROCK
+  - DRAGON_EGG
+  restricted-random-recipes:
+  - fishfryday-grass
+  goods:
+    vanilla:
+      DIAMOND:
+        v1:
+          enabled: true
+          amount: 2
+          vanilla-payment: EMERALD
+          cost-amount: 1
+          stock-limit: 1
+      YEARMARKED_RANDOM:
+        v1:
+          enabled: true
+          amount: 1~10
+          vanilla-payment: YEARMARKED_RANDOM
+          cost-amount: 1~5
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - NITWIT
+        v2:
+          enabled: true
+          amount: 1~10
+          custom-payment: YEARMARKED_RANDOM
+          cost-amount: 1~5
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - NITWIT
+    custom:
+      diamonday-diamond:
+        v1:
+          enabled: true
+          amount: 2
+          custom-payment: fishfryday-emerald
+          cost-amount: 1
+          stock-limit: 1
+      fishfryday-emerald:
+        v1:
+          enabled: true
+          amount: 1
+          custom-payment: earthday-wheat
+          cost-amount: 32
+          custom-payment-2: earthday-potato
+          cost-amount-2: 32
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - FARMER-1
+        v2:
+          enabled: true
+          amount: 1
+          custom-payment: thord-fish
+          cost-amount: 16
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - FARMER-2
+        v3:
+          enabled: true
+          amount: 1
+          vanilla-payment: WOOL
+          cost-amount: 64
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - FARMER-3
+      llama-spit-bucket:
+        v1:
+          enabled: true
+          amount: 1
+          vanilla-payment: WOOL
+          cost-amount: 16
+          custom-payment-2: fishfryday-emerald
+          cost-amount-2: 1
+          stock-limit: 1
+          percent-chance: 25
+          profession-restricted: true
+          professions:
+          - FARMER-3
+        v2:
+          enabled: true
+          amount: 1
+          vanilla-payment: MUTTON
+          cost-amount: 6
+          custom-payment-2: fishfryday-emerald
+          cost-amount-2: 1
+          stock-limit: 1
+          percent-chance: 25
+          profession-restricted: true
+          professions:
+          - BUTCHER-1
+        v3:
+          enabled: true
+          amount: 1
+          vanilla-payment: COMPASS
+          cost-amount: 1
+          custom-payment-2: fishfryday-emerald
+          cost-amount-2: 1
+          stock-limit: 1
+          percent-chance: 25
+          profession-restricted: true
+          professions:
+          - LIBRARIAN-2
+      fish-sword:
+        v2:
+          enabled: true
+          amount: 1
+          vanilla-payment: FISHING_ROD
+          cost-amount: 1
+          stock-limit: 10
+          profession-restricted: true
+          professions:
+          - FARMER-2
+      earth-day-pot-pie:
+        v1:
+          enabled: true
+          amount: 15
+          vanilla-payment: CARROT_ITEM
+          cost-amount: 32
+          vanilla-payment-2: POTATO_ITEM
+          cost-amount-2: 32
+          stock-limit: 2
+          profession-restricted: true
+          professions:
+          - FARMER-1
+        v2:
+          enabled: true
+          amount: 15
+          vanilla-payment: MUTTON
+          cost-amount: 6
+          stock-limit: 5
+          profession-restricted: true
+          professions:
+          - FARMER-3
+      fish-arrow:
+        v1:
+          enabled: true
+          amount: 64
+          custom-payment: fishfryday-emerald
+          cost-amount: 1
+          stock-limit: 2
+          profession-restricted: true
+          professions:
+          - FARMER-4
+      earthday-VILLAGER:
+        v1:
+          enabled: true
+          amount: 3
+          custom-payment: wortag-netherwort
+          cost-amount: 10
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - FARMER-4
+      diamonday-sword:
+        v1:
+          enabled: true
+          amount: 64
+          vanilla-payment: IRON_INGOT
+          cost-amount: 3
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - BLACKSMITH-2
+      lightning-inhibitor:
+        v1:
+          enabled: true
+          amount: 64
+          vanilla-payment: GLASS
+          cost-amount: 16
+          stock-limit: 5
+          profession-restricted: true
+          professions:
+          - BLACKSMITH-3
+      wortag-netherwort:
+        v1:
+          enabled: true
+          amount: 2
+          vanilla-payment: BROWN_MUSHROOM
+          cost-amount: 6
+          vanilla-payment-2: RED_MUSHROOM
+          cost-amount-2: 6
+          stock-limit: 5
+          profession-restricted: true
+          professions:
+          - PRIEST
+      thord-fish:
+        v1:
+          enabled: true
+          amount: 1~10
+          vanilla-payment: YEARMARKED_RANDOM
+          cost-amount: 1~5
+          stock-limit: 1~5
+          profession-restricted: true
+          professions:
+          - NITWIT
+        v2:
+          enabled: true
+          amount: 1~10
+          custom-payment: YEARMARKED_RANDOM
+          cost-amount: 1~5
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - NITWIT
+      YEARMARKED_RANDOM:
+        v1:
+          enabled: true
+          amount: 1~10
+          vanilla-payment: YEARMARKED_RANDOM
+          cost-amount: 1~5
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - NITWIT
+        v2:
+          enabled: true
+          amount: 1~10
+          custom-payment: YEARMARKED_RANDOM
+          cost-amount: 1~5
+          stock-limit: 1
+          profession-restricted: true
+          professions:
+          - NITWIT
