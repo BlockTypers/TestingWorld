@@ -130,8 +130,17 @@ recipe:
     name: Thordfish
     de:
       name: Thorfisch
+    es:
+      name: Thorpescado
+    fr:
+      name: Thorpoisson
+    hu:
+      name: Thorhal
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - FAF
     - AAA
@@ -146,8 +155,17 @@ recipe:
     name: Needle
     de:
       name: Nadel
+    es:
+      name: Aguja
+    fr:
+      name: Aiguille
+    hu:
+      name: Tű
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AFA
     - AFA
@@ -163,8 +181,17 @@ recipe:
     name: Earthday Wheat
     de:
       name: Erdtag Weizen
+    es:
+      name: Earthday Trigo
+    fr:
+      name: Earthday Blé
+    hu:
+      name: Earthday Búza
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - ASA
@@ -183,8 +210,17 @@ recipe:
     name: Earthday Carrot
     de:
       name: Erdtag Carroten
+    es:
+      name: Earthday Zanahoria
+    fr:
+      name: Earthday Carotte
+    hu:
+      name: Earthday Sárgarépa
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - ASA
@@ -203,8 +239,17 @@ recipe:
     name: Earthday Potato
     de:
       name: Erdtag Kartoffel
+    es:
+      name: Earthday Patata
+    fr:
+      name: Earthday Pomme de Terre
+    hu:
+      name: Earthday Burgonya
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - ASA
@@ -223,8 +268,17 @@ recipe:
     name: Wortag Netherwort
     de:
       name: Wortag Netherwort
+    es:
+      name: Wortag Netherwort
+    fr:
+      name: Wortag Netherwort
+    hu:
+      name: Wortag Netherwort
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - ASA
@@ -244,9 +298,18 @@ recipe:
   diamonday-diamond:
     name: Diamonday Diamond
     de:
-      name: Diamantag Diamant
+      name: Diamantag Diamante
+    es:
+      name: Diamonday Diamant
+    fr:
+      name: Diamonday Diamant
+    hu:
+      name: Diamonday Gyémánt
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - ASA
@@ -267,8 +330,17 @@ recipe:
     name: Diamond Needle
     de:
       name: Diamontnadel
+    es:
+      name: Diamant Aguja
+    fr:
+      name: Diamant Aiguille
+    hu:
+      name: Gyémánt Tű
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - ADA
     - ADA
@@ -286,8 +358,17 @@ recipe:
     name: Fishbone Arrow
     de:
       name: Grätenpfeil
+    es:
+      name: Flecha de Espina
+    fr:
+      name: Flèche de Arête de Poisson
+    hu:
+      name: Halszálka Nyíl
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - AFA
@@ -304,8 +385,17 @@ recipe:
     name: Fishfryday Diamond
     de:
       name: Fischfreitag Diamant
+    es:
+      name: Fishfryday Diamante
+    fr:
+      name: Fishfryday Diamant
+    hu:
+      name: Fishfryday Gyémánt
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - AFA
@@ -326,8 +416,17 @@ recipe:
     name: Fishfryday Emerald
     de:
       name: Fischfreitag Smaragd
+    es:
+      name: Fishfryday Esmeralda
+    fr:
+      name: Fishfryday Émeraude
+    hu:
+      name: Fishfryday Smaragd
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - AFA
@@ -348,8 +447,17 @@ recipe:
     name: Fishfryday Grass
     de:
       name: Fischfreitag Rasen
+    es:
+      name: Fishfryday Césped
+    fr:
+      name: Fishfryday Herbe
+    hu:
+      name: Fishfryday Fű
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - AFA
@@ -370,8 +478,17 @@ recipe:
     name: Earthday Pot Pie
     de:
       name: Erdtag Topf Torte
+    es:
+      name: Earthday Empanada
+    fr:
+      name: Earthday Hachis Parmentier
+    hu:
+      name: Earthday Pásztor Pite
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - CCC
     - PPP
@@ -396,8 +513,17 @@ recipe:
     name: Lightning Inhibitor
     de:
       name: Blitz Hemmer
+    es:
+      name: Relámpago Inhibidor
+    fr:
+      name: Foudre Inhibiteur
+    hu:
+      name: Villám Dugó
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - DDD
     - ASA
@@ -420,8 +546,23 @@ recipe:
       name: Lama-Spieß-Eimer
       lore:
       - Tucke ein Stick in mir ein
+    es:
+      name: Llama Escupir-Cangilón
+      lore:
+      - Sumerja un palo en mí
+    fr:
+      name: Lama Cracher-Seau
+      lore:
+      - Trempez un bâton en moi
+    hu:
+      name: Láma Nyárs-Vödör
+      lore:
+      - Elmerít bottal nekem
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - ASA
@@ -448,8 +589,23 @@ recipe:
       name: Llama Spießstab
       lore:
       - Fallen lassen, um Spucken zu werfen
+    es:
+      name: Llama Escupir-Barra
+      lore:
+      - Saltar a lanzar escupir
+    fr:
+      name: Lama Cracher-Bâton
+      lore:
+      - Goutte à gicler
+    hu:
+      name: Láma Nyárs-Pálca
+      lore:
+      - Dobd a kiruccanás nyárson
     locales:
     - de
+    - es
+    - fr
+    - hu
     rows:
     - AAA
     - ASA
@@ -471,30 +627,63 @@ yearmarked:
   entity-locales:
   - en
   - de
+  - es
+  - fr
+  - hu
 yearmarked-entities:
   COW:
     en: Cow
     de: Kuh
+    es: Vaca
+    fr: Vache
+    hu: Tehén
   HORSE:
     en: Horse
     de: Pferde
+    es: Caballo
+    fr: Cheval
+    hu: Ló
   DONKEY:
     en: Donkey
     de: Esel
+    es: Burro
+    fr: Âne
+    hu: Szamár
   LLAMA:
     en: Llama
     de: Lama
+    es: Llama
+    fr: Lama
+    hu: Láma
   SHEEP:
     en: Sheep
+    es: Oveja
+    fr: Mouton
+    hu: Juh
   CHICKEN:
     en: Chicken
     de: Huhn
+    es: Pollo
+    fr: Poulet
+    hu: Csirke
   RABBIT:
     en: Rabbit
     de: Hase
+    es: Conejo
+    fr: Lapin
+    hu: Nyúl
   WOLF:
     en: Wolf
     de: Wolf
+    es: Lobo
+    fr: Loup
+    hu: Farkas
+  PIG:
+    en: Pig
+    de: Schwein
+    es: Cerdo
+    fr: Porc
+    hu: Malac
 yearmarked-:
   entities:
     SHEEP:
