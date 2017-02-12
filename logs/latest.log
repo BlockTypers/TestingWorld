@@ -1,0 +1,149 @@
+[01:36:16] [Server thread/INFO]: Starting minecraft server version 1.11.2
+[01:36:16] [Server thread/INFO]: Loading properties
+[01:36:16] [Server thread/INFO]: Default game type: SURVIVAL
+[01:36:16] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-b4417b8-a1d3777 (MC: 1.11.2) (Implementing API version 1.11.2-R0.1-SNAPSHOT)
+[01:36:16] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:36:16] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:36:16] [Server thread/INFO]: Debug logging is disabled
+[01:36:16] [Server thread/INFO]: Generating keypair
+[01:36:16] [Server thread/INFO]: Starting Minecraft server on *:25565
+[01:36:16] [Server thread/INFO]: Using epoll channel type
+[01:36:16] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[01:36:16] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v2.2.3
+[01:36:16] [Server thread/INFO]: [Yearmarked] Loading Yearmarked v2.0.0
+[01:36:16] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[01:36:16] [Server thread/INFO]: Preparing level "world"
+[01:36:16] [Server thread/INFO]: -------- World Settings For [world] --------
+[01:36:16] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[01:36:16] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[01:36:16] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[01:36:16] [Server thread/INFO]: Mob Spawn Range: 4
+[01:36:16] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Cane Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Melon Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Vine Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Random Lighting Updates: false
+[01:36:16] [Server thread/INFO]: Structure Info Saving: true
+[01:36:16] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617Monument: 10387313 Slime: 987234911
+[01:36:16] [Server thread/INFO]: Max TNT Explosions: 100
+[01:36:16] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[01:36:16] [Server thread/INFO]: Item Despawn Rate: 6000
+[01:36:16] [Server thread/INFO]: Item Merge Radius: 2.5
+[01:36:16] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[01:36:16] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[01:36:16] [Server thread/INFO]: View Distance: 10
+[01:36:16] [Server thread/INFO]: Experience Merge Radius: 3.0
+[01:36:16] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[01:36:16] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[01:36:16] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[01:36:16] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[01:36:16] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[01:36:16] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[01:36:16] [Server thread/INFO]: Mob Spawn Range: 4
+[01:36:16] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Cane Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Melon Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Vine Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Random Lighting Updates: false
+[01:36:16] [Server thread/INFO]: Structure Info Saving: true
+[01:36:16] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617Monument: 10387313 Slime: 987234911
+[01:36:16] [Server thread/INFO]: Max TNT Explosions: 100
+[01:36:16] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[01:36:16] [Server thread/INFO]: Item Despawn Rate: 6000
+[01:36:16] [Server thread/INFO]: Item Merge Radius: 2.5
+[01:36:16] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[01:36:16] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[01:36:16] [Server thread/INFO]: View Distance: 10
+[01:36:16] [Server thread/INFO]: Experience Merge Radius: 3.0
+[01:36:16] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[01:36:16] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[01:36:16] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[01:36:16] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[01:36:16] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[01:36:16] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[01:36:16] [Server thread/INFO]: Mob Spawn Range: 4
+[01:36:16] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Cane Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Melon Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Vine Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[01:36:16] [Server thread/INFO]: Random Lighting Updates: false
+[01:36:16] [Server thread/INFO]: Structure Info Saving: true
+[01:36:16] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617Monument: 10387313 Slime: 987234911
+[01:36:16] [Server thread/INFO]: Max TNT Explosions: 100
+[01:36:16] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[01:36:16] [Server thread/INFO]: Item Despawn Rate: 6000
+[01:36:16] [Server thread/INFO]: Item Merge Radius: 2.5
+[01:36:16] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[01:36:16] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[01:36:16] [Server thread/INFO]: View Distance: 10
+[01:36:16] [Server thread/INFO]: Experience Merge Radius: 3.0
+[01:36:16] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[01:36:16] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[01:36:16] [Server thread/INFO]: Preparing start region for level 0 (Seed: 993949252989046052)
+[01:36:17] [Server thread/INFO]: Preparing spawn area: 40%
+[01:36:18] [Server thread/INFO]: Preparing start region for level 1 (Seed: 993949252989046052)
+[01:36:19] [Server thread/INFO]: Preparing start region for level 2 (Seed: 993949252989046052)
+[01:36:19] [Server thread/INFO]: [HolographicDisplays] Enabling HolographicDisplays v2.2.3
+[01:36:19] [Server thread/INFO]: [Yearmarked] Enabling Yearmarked v2.0.0
+[01:36:19] [Server thread/INFO]: [Yearmarked] Using locale found in this plugins config file
+[01:36:19] [Server thread/INFO]: [Yearmarked] LOADING... World(world)
+[01:36:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:36:19] [Server thread/INFO]: Done (2.992s)! For help, type "help" or "?"
+[01:36:39] [User Authenticator #1/INFO]: UUID of player spaarkimus is 991d8d91-b7d2-4c56-8ebd-41059c5b43eb
+[01:36:40] [Server thread/INFO]: spaarkimus[/127.0.0.1:42738] logged in with entity id 246 at ([world]232.67523933937878, 101.0, 289.56669755237454)
+[01:36:46] [Server thread/INFO]: spaarkimus issued server command: /give @p mutton 6
+[01:36:46] [Server thread/INFO]: [spaarkimus: Given [Raw Mutton] * 6 to spaarkimus]
+[01:37:18] [Server thread/INFO]: spaarkimus issued server command: /give @p wool 16
+[01:37:18] [Server thread/INFO]: [spaarkimus: Given [White Wool] * 16 to spaarkimus]
+[01:37:29] [Server thread/INFO]: spaarkimus issued server command: /gamemode 1
+[01:37:29] [Server thread/INFO]: [spaarkimus: Set own game mode to Creative Mode]
+[01:38:08] [Server thread/INFO]: spaarkimus issued server command: /give @p stick
+[01:38:08] [Server thread/INFO]: [spaarkimus: Given [Stick] * 1 to spaarkimus]
+[01:38:19] [Server thread/INFO]: [@: Teleported Villager to 235.21324122195153, 201.0, 278.38499008509854]
+[01:38:19] [Server thread/INFO]: [@: Teleported Villager to 235.06757373881095, 203.0, 282.0851733426605]
+[01:38:19] [Server thread/INFO]: [@: Teleported Villager to 236.28635160064746, 203.0, 282.5507209019609]
+[01:38:45] [Server thread/INFO]: spaarkimus issued server command: /ym day 7
+[01:38:51] [Server thread/INFO]: spaarkimus issued server command: /gamemode 0
+[01:38:51] [Server thread/INFO]: [spaarkimus: Set own game mode to Survival Mode]
+[01:39:10] [Server thread/INFO]: spaarkimus issued server command: /gamemode 1
+[01:39:10] [Server thread/INFO]: [spaarkimus: Set own game mode to Creative Mode]
+[01:39:36] [Server thread/INFO]: spaarkimus issued server command: /give @p glass
+[01:39:36] [Server thread/INFO]: [spaarkimus: Given [Glass] * 1 to spaarkimus]
+[01:39:49] [Server thread/INFO]: spaarkimus issued server command: /gamemode 1
+[01:39:49] [Server thread/INFO]: [spaarkimus: Set own game mode to Creative Mode]
+[01:39:51] [Server thread/INFO]: spaarkimus issued server command: /gamemode 0
+[01:39:51] [Server thread/INFO]: [spaarkimus: Set own game mode to Survival Mode]
+[01:41:08] [Server thread/INFO]: spaarkimus issued server command: /clear
+[01:41:08] [Server thread/INFO]: [spaarkimus: Cleared the inventory of spaarkimus, removing 8 items]
+[01:41:33] [Server thread/INFO]: spaarkimus issued server command: /ym day 1
+[01:42:21] [Server thread/INFO]: spaarkimus issued server command: /ym day 1
+[01:42:24] [Server thread/INFO]: spaarkimus issued server command: /stop
+[01:42:24] [Server thread/INFO]: [spaarkimus: Stopping the server]
+[01:42:24] [Server thread/INFO]: Stopping server
+[01:42:24] [Server thread/INFO]: [Yearmarked] Disabling Yearmarked v2.0.0
+[01:42:24] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v2.2.3
+[01:42:24] [Server thread/INFO]: Saving players
+[01:42:24] [Server thread/INFO]: spaarkimus lost connection: Server closed
+[01:42:24] [Server thread/INFO]: spaarkimus left the game
+[01:42:24] [Server thread/INFO]: Saving worlds
+[01:42:24] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[01:42:24] [Server thread/INFO]: Saving chunks for level 'world_nether'/Nether
+[01:42:24] [Server thread/INFO]: Saving chunks for level 'world_the_end'/The End
