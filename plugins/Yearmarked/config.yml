@@ -1,9 +1,3 @@
-# 
-#  Farmer  1
-#  Fisherman 2
-#  Shepherd  3
-#  Fletcher  4
-
 debug: false
 log:
   recipes:
