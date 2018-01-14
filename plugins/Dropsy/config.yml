@@ -1,0 +1,471 @@
+dont-load-example: false
+debug: true
+log:
+  recipes:
+    enable: false
+data:
+  backup:
+    frequency:
+      sec: -1
+locale: en
+drop-sound: ITEM_CHORUS_FRUIT_TELEPORT
+allow-rebreak: false
+destroy-on-break: false
+drop-chance-percent: 10
+amount: 1
+exp: 0
+spell-chance-percent: 1
+spell-destroy-on-break: false
+spell-allow-rebreak: false
+spell-power: 1
+regions:
+  default:
+    name: The Great Unknown
+  default2:
+    name: A Nightmare
+    worlds:
+    - the nether
+    - the end
+  first:
+    name: Zone 1
+    priority: 1
+    worlds:
+    - world
+    bounds:
+      highest-x: 10
+      highest-z: 10
+      lowest-x: -10
+      lowest-z: -10
+    ignore-default-blocks: true
+    ignore-default-mobs: true
+  second:
+    name: Zone 2
+    priority: 2
+    bounds:
+      highest-x: 2000
+      highest-z: 2000
+      lowest-x: -2000
+      lowest-z: -2000
+first-blocks:
+  SAND:
+    enabled: true
+    allow-rebreak: true
+    destroy-on-break: true
+    amount-range: 1~3
+    exp: 1
+    drops-distribution:
+    - NOTHING(95)
+    - GOLD_NUGGET(5)
+    drops:
+      GOLD_NUGGET:
+        enabled: true
+        exp-range: 1~5
+  SAND_2:
+    enabled: true
+    allow-rebreak: true
+    destroy-on-break: true
+    amount-range: 1~3
+    exp: 1
+    drops-distribution:
+    - NOTHING(80)
+    - COAL(5)
+    - fossil-flame(14)
+    - molten-shovel(1)
+    drops:
+      COAL:
+        enabled: true
+        name: Normal Boring Coal
+      molten-shovel:
+        recipe: molten-shovel
+        enabled: true
+      fossil-flame:
+        material: COAL
+        enabled: true
+        name: Fossil Flame
+        lore:
+        - a lump of coal so perfectly dark that it started to glow
+        - you get a strange feeling whenever you look directly at it
+        enchantments:
+          KNOCKBACK:
+            level: 2
+second-blocks:
+  SAND:
+    enabled: true
+    allow-rebreak: true
+    destroy-on-break: true
+    amount-range: 1~3
+    exp: 1
+    drops-distribution:
+    - NOTHING(80)
+    - EMERALD(5)
+    drops:
+      EMERALD:
+        enabled: true
+        exp-range: 1~5
+default2-blocks:
+  ALL_BLOCKS:
+    enabled: true
+    exp: 1
+    drops-distribution:
+    - NOTHING(80)
+    - STICK(5)
+    drops:
+      STICK:
+        enabled: true
+default-blocks:
+  SAND:
+    enabled: true
+    allow-rebreak: true
+    destroy-on-break: true
+    amount-range: 1~3
+    exp: 1
+    drops-distribution:
+    - NOTHING(80)
+    - COAL(5)
+    - GOLD_NUGGET(3)
+    - STAINED_GLASS(3)
+    - GOLD_NUGGET,COAL(3)
+    - GOLD_NUGGET,COAL,STAINED_GLASS(3)
+    - GOLD_NUGGET,STAINED_GLASS(3)
+    drops:
+      COAL:
+        enabled: true
+      GOLD_NUGGET:
+        enabled: true
+        exp-range: 1~5
+      STAINED_GLASS:
+        enabled: true
+        amount: 1
+        required-item: molten-shovel
+        exp-distribution:
+        - 1(50)
+        - 2(48)
+        - 10(2)
+        material-data-distribution:
+        - 0(5)
+        - 1(5)
+        - 2(5)
+        - 3(5)
+        - 4(5)
+        - 5(5)
+        - 6(5)
+        - 7(5)
+        - 8(5)
+        - 9(5)
+        - 10(5)
+        - 11(5)
+        - 12(5)
+        - 13(5)
+        - 14(25)
+        - 15(5)
+  GRAVEL:
+    enabled: true
+    allow-rebreak: true
+    drop-chance-percent: 2
+    drops:
+      COAL:
+        enabled: true
+      IRON_NUGGET:
+        enabled: true
+        drop-chance-percent: 1
+  STONE-1:
+    enabled: true
+    destroy-on-break: true
+    drops:
+      SAND:
+        enabled: true
+      DIAMOND:
+        enabled: true
+        drop-chance-percent: 1
+        amount-distribution:
+        - 1(90)
+        - 2(8)
+        - 3(2)
+  DIAMOND_ORE:
+    enabled: false
+    drops:
+      EMERALD:
+        enabled: true
+        drop-chance-percent: 1
+  DIRT:
+    enabled: true
+    allow-rebreak: false
+    destroy-on-break: true
+    drop-chance-percent: 1
+    spell-chance-percent: 1
+    spell-allow-rebreak: true
+    spell-destroy-on-break: false
+    spells:
+      invigorating-work:
+        command-sequence: haste
+        spell-chance-percent: 5
+        source:
+          en: Invigorating Work
+          de: Belebende Arbeit
+        variables:
+          LEVEL: 2
+          SECONDS: 30
+      dirty-job:
+        command-sequence: fatigue
+        source:
+          en: Dirty Job
+          de: Dreckige Arbeit
+        variables:
+          LEVEL: 2
+          SECONDS: 15
+    amount: 1
+    exp: 0
+    drops:
+      POTATO_ITEM:
+        enabled: true
+        lowest-y: 62
+        amount-range: 1~3
+        required-item: archaeologist-shovel
+        spells-distribution:
+        - nothing(20)
+        - reward1(40)
+        - reward2(40)
+        spells:
+          reward1:
+            variables:
+              AMOUNT: 2
+            messages:
+              en:
+              - You got &AMOUNT compass(s).
+              de:
+              - Du hast &AMOUNT Kompass(e) bekomment.
+            command: give &PLAYER COMPASS &AMOUNT
+          reward2:
+            command: give &PLAYER MAP
+            messages:
+              en:
+              - You got a map.
+              de:
+              - Du hast eine Landkarte bekomment.
+      BONE:
+        enabled: true
+        drop-chance-percent: 3
+        lowest-y: 50
+        required-item: archaeologist-shovel
+      TOTEM:
+        enabled: true
+        drop-chance-percent: 0.5
+        exp-range: 1~5
+        highest-y: 20
+        required-item: archaeologist-shovel
+      SKULL_ITEM:
+        enabled: true
+        drop-chance-percent: 1
+        required-item: archaeologist-shovel
+        highest-y: 30
+        lowest-y: 15
+      ARROW:
+        enabled: true
+        amount-range: 1~3
+        required-item: archaeologist-shovel
+mobs-kill:
+  ALL_MOBS:
+    enabled: true
+    amount: 1
+    exp: 0
+    spell-chance-percent: 1
+    spells:
+      get-pumped:
+        command-sequence: haste
+        spell-chance-percent: 5
+        source:
+          en: Get pumped
+          de: Pumpe es auf
+        variables:
+          LEVEL: 1
+          SECONDS: 10
+  SKELETON:
+    enabled: true
+    amount-range: 1~3
+    exp: 1
+    spell-chance-percent: 1
+    on-damage-spell-chance-percent: 2
+    spells:
+      invigorating-work:
+        command-sequence: haste
+        spell-chance-percent: 5
+        required-item: head-hunter
+        source:
+          en: Invigorating Battle
+          de: Belebend Kampf
+        variables:
+          LEVEL: 3
+          SECONDS: 15
+      dirty-job:
+        command-sequence: fatigue
+        source:
+          en: Dirty Fight
+          de: Dreckige Kampf
+        variables:
+          LEVEL: 2
+          SECONDS: 5
+    drops-distribution:
+    - COAL, SKULL_ITEM(80)
+    - COAL(20)
+    drops:
+      COAL:
+        enabled: true
+      SKULL_ITEM:
+        enabled: true
+        exp-range: 1~5
+        required-item: head-hunter
+second-mobs-damage:
+  SKELETON:
+    name: Spaarkimus
+    enabled: true
+    amount-range: 1~3
+    exp: 1
+    spell-chance-percent: 100
+    spells:
+      damage:
+        enabled: true
+        command-sequence: damage
+        source:
+          en: Death's Breath
+          de: Der Atmen des Tods
+        variables:
+          LEVEL: 2
+          SECONDS: 4
+          TARGET: PLAYER
+    drops-distribution:
+    - NOTHING(50)
+    - spaarkimus-prime(50)
+    drops:
+      BONE:
+        enabled: true
+        required-item: head-hunter
+      spaarkimus-prime:
+        material: ARROW
+        enabled: true
+        name: Spaarkimus Prime
+        lore:
+        - an arrow so sharp that
+        - it hurts to even look at it
+        enchantments:
+          ARROW_DAMAGE:
+            level: 1
+second-mobs-kill:
+  SKELETON:
+    name: Spaarkimus
+    enabled: true
+    amount-range: 1~3
+    exp: 10
+    drops-distribution:
+    - spaarkimus-omega(100)
+    drops:
+      spaarkimus-omega:
+        material: ARROW
+        enabled: true
+        name: Spaarkimus Omega
+        lore:
+        - an arrow so sharp that it will
+        - literally knock your socks off
+        enchantments:
+          ARROW_KNOCKBACK:
+            level: 2
+          ARROW_DAMAGE:
+            level: 2
+recipes:
+- molten-shovel
+- archaeologist-shovel
+- head-hunter
+command-sequences:
+  damage:
+    commands:
+    - effect &TARGET 20 &LEVEL &SECONDS
+    messages:
+      en:
+      - §4SOURCE -> Damaged (&LEVEL) - &SECONDS sec
+      de:
+      - §4SOURCE -> Beschädigt (&LEVEL) - &SECONDS sec
+  haste:
+    commands:
+    - effect &TARGET 3 &LEVEL &SECONDS
+    messages:
+      en:
+      - §2SOURCE -> Haste (&LEVEL) - &SECONDS sec
+      de:
+      - §2SOURCE -> Eile (&LEVEL) - &SECONDS sec
+  fatigue:
+    commands:
+    - effect &TARGET 4 &LEVEL &SECONDS
+    messages:
+      en:
+      - §eSOURCE -> Fatigue (&LEVEL) -  &SECONDS sec
+      de:
+      - §eSOURCE -> Müdigkeit (&LEVEL) -  &SECONDS sec
+recipe:
+  molten-shovel:
+    name: Molten Shovel
+    de:
+      name: Geschmolzene Schaufel
+    es:
+      name: Pala fundida
+    fr:
+      name: Pelle en fusion
+    locales:
+    - de
+    - es
+    - fr
+    rows:
+    - CBC
+    - OSO
+    - LGL
+    mats:
+    - S=DIAMOND_SPADE
+    - G=STAINED_GLASS-14
+    - L=LAVA_BUCKET
+    - O=OBSIDIAN
+    - B=BLAZE_ROD
+    - C=COAL_BLOCK
+    output: DIAMOND_SPADE
+    op:
+      only: false
+  archaeologist-shovel:
+    name: Archaeologist Shovel
+    de:
+      name: Archäologe Schaufel
+    es:
+      name: Arqueólogo Pala
+    fr:
+      name: Pelle Archéologue
+    locales:
+    - de
+    - es
+    - fr
+    rows:
+    - CTC
+    - MSM
+    - BKB
+    mats:
+    - S=DIAMOND_SPADE
+    - C=COMPASS
+    - M=EMPTY_MAP
+    - B=BONE
+    - T=TOTEM
+    - K=SKULL_ITEM
+    output: DIAMOND_SPADE
+    op:
+      only: false
+  head-hunter:
+    name: Head Hunter
+    de:
+      name: Kopfjäger
+    locales:
+    - de
+    rows:
+    - FSF
+    - FAF
+    - FFF
+    mats:
+    - A=DIAMOND_AXE
+    - F=FLINT
+    - S=SKULL_ITEM
+    output: DIAMOND_AXE
+    op:
+      only: false
